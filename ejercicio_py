@@ -1,0 +1,25 @@
+import asyncio
+
+
+async def alerta_stock_bajo(codigo, nombre, stock_actual):
+    """
+    Simula el envío de un correo al administrador
+    cuando un producto tiene stock bajo.
+    """
+    await asyncio.sleep(2)
+
+    print("\n" + "=" * 80)
+    print(
+        f" ALERTA CRÍTICA: El producto {nombre} ({codigo}) "
+        f"ha bajado a {stock_actual} unidades. "
+        "Solicitar restock inmediato."
+    )
+    print("=" * 80 + "\n")
+async def main():
+    await alerta_stock_bajo("P001", "Teclado", 3)
+
+async def main():
+    await alerta_stock_bajo("P001", "Teclado", 3)
+
+
+asyncio.run(main())
