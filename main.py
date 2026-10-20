@@ -39,3 +39,13 @@ async def buscar_un_producto(codigo_producto:str):
         raise HTTPException(status_code=404, detail="El producto solicitao no esxiste en la BD")
 
 
+@appiRest.get("/categorias")
+async def obtener_categorias():
+
+    datos = await leer_base_datos()
+    
+    herramientas = datos.get("herramientas", []) if isinstance(datos, dict) else datos
+    
+    categorias = list(set(h.get("categoria") for h in herramientas if "categoria" in h))
+    
+    return categorias
