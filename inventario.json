@@ -1,0 +1,18 @@
+{
+    "taller": "Taller de vehículos",
+    "herramientas": [
+        {
+            
+            "nombre": "Llave inglesa",
+            "cantidad": 5
+        },
+        {
+            "nombre": "Destornillador",
+            "cantidad": 10
+        },
+        {
+            "nombre": "Martillo",
+            "cantidad": 3
+        }
+    ]
+}
