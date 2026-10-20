@@ -2,15 +2,17 @@
     "taller": "Taller de vehículos",
     "herramientas": [
         {
-            
+            "codigo": "H001",
             "nombre": "Llave inglesa",
             "cantidad": 5
         },
         {
+            "codigo": "H002",
             "nombre": "Destornillador",
             "cantidad": 10
         },
         {
+            "codigo": "H003",
             "nombre": "Martillo",
             "cantidad": 3
         }
