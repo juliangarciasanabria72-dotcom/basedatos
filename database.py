@@ -4,6 +4,7 @@ import asyncio
 
 ARCHIVO_BD = "inventario.json"
 db_lock = asyncio.Lock()
+db_lock = asyncio.Lock()
 
 async def leer_base_datos():
     try:
@@ -12,9 +13,11 @@ async def leer_base_datos():
             return json.loads(contenido)
     except FileNotFoundError:
         return {"taller": "", "herramientas": []} # Estructura por defecto para evitar errores
+        return {"taller": "", "herramientas": []} # Estructura por defecto para evitar errores
 
 async def guardar_base_datos(datos):
     async with aiofiles.open(ARCHIVO_BD, mode="w", encoding="utf-8") as f:
+        await f.write(json.dumps(datos, indent=4, ensure_ascii=False))
         await f.write(json.dumps(datos, indent=4, ensure_ascii=False))
 
 async def obtener_producto(codigo):
