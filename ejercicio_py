@@ -12,7 +12,7 @@ async def alerta_stock_bajo(codigo, nombre, stock_actual):
     print(
         f" ALERTA CRÍTICA: El producto {nombre} ({codigo}) "
         f"ha bajado a {stock_actual} unidades. "
-        "Solicitar restock inmediato."
+        #"Solicitar restock inmediato."
     )
     print("=" * 80 + "\n")
 async def main():

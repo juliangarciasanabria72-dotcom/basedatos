@@ -1,0 +1,25 @@
+{
+    "taller": "Taller de vehículos",
+    "herramientas": [
+        {
+            "codigo": "H001",
+            "nombre": "Llave inglesa",
+            "stock": 5,
+            "compatible_con": ["carro", "moto"]
+        },
+        {
+            "codigo": "H002",
+            "nombre": "Destornillador",
+            "stock": 10,
+            "precio": 15000,
+            "compatible_con": ["Rin 17"] 
+        },
+        {
+            "codigo": "H003",
+            "nombre": "Martillo",
+            "precio": 50000,
+            "stock":"grautito",
+            "compatible_con":"Rin 18"
+        }
+    ]
+}
